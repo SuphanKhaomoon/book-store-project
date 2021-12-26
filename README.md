@@ -1,7 +1,7 @@
-BOOKSTORE-PROJECT  / PMD47 CODING THE FUTURE(CTF-01) CODE CTF010246
-NAME: SUPHAN SURNAME: KHAOMOON
+**BOOKSTORE-PROJECT  / PMD47 CODING THE FUTURE(CTF-01) CODE CTF010246
+NAME: SUPHAN SURNAME: KHAOMOON**
 
-1.FRONT-END
+**1.FRONT-END**
 
 Angular CLI: 13.0.4
 Node: 16.13.0
@@ -25,7 +25,7 @@ Package                         Version
 rxjs                            7.4.0
 typescript                      4.4.4
 
-2.BACK-END : SPRING BOOT
+**2.BACK-END : SPRING BOOT**
 
  .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -56,7 +56,7 @@ typescript                      4.4.4
 2021-12-27 04:51:45.227  INFO 876 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-12-27 04:51:45.237  INFO 876 --- [           main] c.b.bookstore.BookstoreApplication       : Started BookstoreApplication in 4.391 seconds (JVM running for 5.303)
 
-3.Database : MYSQL(Maria-DB)
+**3.Database : MYSQL(Maria-DB)**
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 8
 Server version: 8.0.27 MySQL Community Server - GPL
