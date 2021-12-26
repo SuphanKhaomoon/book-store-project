@@ -1,0 +1,8 @@
+<div class="container" *ngIf="!admin">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <app-book-items
+            *ngFor="let b of books | async" 
+            [book] = "b" 
+        ></app-book-items>
+    </div>
+</div>

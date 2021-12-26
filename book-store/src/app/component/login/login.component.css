@@ -1,0 +1,49 @@
+.login {
+    background-color: white;
+    width: 40vw;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid slategrey;
+    overflow: auto;
+}
+
+.logo {
+    text-align: center;
+    display: block;
+}
+
+.pic {
+    width: 20vw;
+    height: 20vh;
+}
+
+.margin {
+    margin: 20px 0;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.submit {
+    margin: 20px 20px 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(10, 92, 10);
+}

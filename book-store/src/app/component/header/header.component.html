@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-around header">
+    <div>
+        <app-logo></app-logo>
+    </div>
+    <span class="align-self-center">
+        <app-search-bar></app-search-bar>
+    </span>
+    <span class="align-self-center">
+        <button class="btn btn-primary text-white btn-md" *ngIf="showButton"><a [routerLink]="['login']">เข้าสู่ระบบ</a></button>
+        <span class="text-primary" *ngIf="!showButton">ยินดีต้อนรับคุณ</span>
+    </span>
+    <span class="align-self-center">
+        <div class="shopping_cart text-primary">
+            <a [routerLink]="['cart']">
+                <span class="material-icons" matBadge="{{count}}" matBadgeColor="warn">shopping_cart</span>
+            </a>
+        </div>
+    </span>
+</div>

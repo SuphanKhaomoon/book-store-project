@@ -1,0 +1,31 @@
+.search-input {
+    width: 60vw;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .search-input {
+      width: 100%;
+    }
+
+    .input-group-append {
+        display: none;
+    }
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}

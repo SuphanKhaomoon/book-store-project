@@ -1,0 +1,61 @@
+<div class="d-flex justify-content-center">
+    <div class="align-items-center create">
+        <div class="logo">
+            <img src="../../assets/Logo/book-store-logo1.jpg" class="rounded-circle pic">
+            <div class="align-self-center">
+                <h3 class="text-info">Create Book</h3>
+            </div>
+        </div>
+        <div [hidden]="submitted">
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">ชื่อหนังสือ</label>
+                    <input type="text" class="form-control" name="bookName" id="bookName" required [(ngModel)]="book.bookname" placeholder="Book Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">รหัสสินค้า</label>
+                    <input type="text" class="form-control" name="bookCode" id="bookCode" required [(ngModel)]="book.bookcode" placeholder="Book Code">
+                </div>
+                <div class="form-group">
+                    <label for="name">ผู้แต่ง</label>
+                    <input type="text" class="form-control" name="author" id="author" required [(ngModel)]="book.author" placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <label for="name">สำนักพิมพ์</label>
+                    <input type="text" class="form-control" name="publisher" id="publisher" required [(ngModel)]="book.publisher" placeholder="Publisher">
+                </div>
+                <div class="form-group">
+                    <label for="name">ราคาขาย</label>
+                    <input type="text" class="form-control" name="price" id="price" required [(ngModel)]="book.price" placeholder="Price">
+                </div>
+                <div class="form-group">
+                    <label for="name">ราคาก่อนขาย</label>
+                    <input type="text" class="form-control" name="oldPrice" id="oldPrice" required [(ngModel)]="book.oldPrice" placeholder="Old Price">
+                </div>
+                <div class="form-group">
+                    <label for="name">จำนวน</label>
+                    <input type="text" class="form-control" name="quantity" id="quantity" required [(ngModel)]="book.quantity" placeholder="Quantity">
+                </div>
+                <div class="form-group">
+                    <label for="name">ที่อยู่รูปภาพ</label>
+                    <input type="text" class="form-control" name="imageUrl" id="imageUrl" required [(ngModel)]="book.imageUrl" placeholder="Image Url">
+                </div>
+                <div class="form-group">
+                    <label for="name">หมวดหมู่</label>
+                    <input type="text" class="form-control" name="catagory" id="catagory" required [(ngModel)]="book.category" placeholder="Category">
+                </div>
+        
+                <button type="submit" class="btn btn-success submit">Create Book</button>
+            </form>
+        </div>
+    
+        <div [hidden]="!submitted">
+            <h4>You submitted successfully!</h4>
+        </div>
+
+    </div>
+</div>
+
+
+
+

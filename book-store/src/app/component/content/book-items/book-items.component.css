@@ -1,0 +1,31 @@
+#image {
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 5px;
+}
+
+.img {
+    height: 250px;
+    border-radius: 5px;
+}
+
+.item {
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(228, 228, 228, 1.5);
+    margin-bottom: 20px;
+}
+
+.name {
+    height: 80px;
+}
+.price {
+    height: 20px;
+}
+
+.price span {
+    margin: 5px;
+}

@@ -1,0 +1,16 @@
+<div class="card item">
+  <div id="image">
+    <img src="{{ book.imageUrl }}" class="card-img-top img" alt="...">
+  </div>
+  <div class="card-body">
+    <div class="name">
+      <div class="card-text text-success">{{ book.bookname }}</div>
+      <div class="card-text text-info">By {{ book.author }}</div>
+    </div>
+    <div class="price">
+      <span class="card-text text-danger font-weight-bold">{{ book.price }}</span>
+      <span class="text-decoration-line-through">{{ book.oldPrice }}</span>
+    </div>
+    <button class="btn btn-primary" (click)="addtocart(book)">ใส่รถเข็น</button>
+  </div>
+</div>
