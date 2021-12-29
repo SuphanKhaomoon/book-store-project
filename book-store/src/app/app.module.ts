@@ -8,16 +8,12 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { SearchBarComponent } from './component/header/search-bar/search-bar.component';
 import { LogoComponent } from './component/header/logo/logo.component';
 import { SignInComponent } from './component/sign-in/sign-in.component';
-import { BookItemsComponent } from './component/content/book-items/book-items.component';
-import { BookListComponent } from './component/content/book-list/book-list.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { CreatUserComponent } from './user/creat-user/creat-user.component';
 import { SearchUserComponent } from './user/search-user/search-user.component';
 import { LoginComponent } from './component/login/login.component';
 import { CartComponent } from './component/cart/cart.component';
-import { BookUpdateComponent } from './component/content/book-update/book-update.component';
-import { BookCreateComponent } from './component/content/book-create/book-create.component';
 
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,10 +21,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ContentModule } from './component/content/content.module';
 
 import { UserBackendService } from './service/user-backend.service';
 import { AuthenticationService } from './service/authentication.service';
+
 
 @NgModule({
   declarations: [
@@ -40,16 +38,12 @@ import { AuthenticationService } from './service/authentication.service';
     SearchBarComponent,
     LogoComponent,
     SignInComponent,
-    BookItemsComponent,
-    BookListComponent,
     LoginComponent,
     CartComponent,
     UserListComponent,
     UserDetailsComponent,
     CreatUserComponent,
     SearchUserComponent,
-    BookCreateComponent,
-    BookUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +53,8 @@ import { AuthenticationService } from './service/authentication.service';
     BrowserAnimationsModule,
     MatBadgeModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    ContentModule
   ],
   providers: [UserBackendService, AuthenticationService],
   bootstrap: [AppComponent]

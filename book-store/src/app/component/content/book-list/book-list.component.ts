@@ -40,6 +40,7 @@ export class BookListComponent implements OnInit {
 
   searchBook() {
     this.books = this.bookBackendService.getBookByCatalog(this.category);
+    
   }
 
   deleteBook(id: number) {

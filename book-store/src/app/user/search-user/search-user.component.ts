@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Book } from 'src/app/model/book';
+import { BookBackendService } from 'src/app/service/book-backend.service';
 
 @Component({
   selector: 'app-search-user',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-user.component.css']
 })
 export class SearchUserComponent implements OnInit {
+  books!: Observable<Book[]>;
+  category!: string;
 
-  constructor() { }
+  constructor(private bookBackendService: BookBackendService) { }
 
-  ngOnInit(): void {
+  ngOnInit()  {
+    // this.category = '1';
+    this.searchBook();
+  }
+
+  searchBook() {
+    this.books = this.bookBackendService.getBookByCatalog('1');
   }
 
 }

@@ -34,7 +34,7 @@ export class CartComponent implements OnInit {
   }
 
   gotoBooklist() {
-    this.router.navigate(['book-list/category/1']);
+    this.router.navigate(['book-list/10']);
   }
 
 }
